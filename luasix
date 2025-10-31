@@ -11,7 +11,7 @@ local Mobile       = Reqs.ApplyMobileTrain
 local Speed        = Sys.TrainSpeedHasChanged  
 
 local config = {
-    TrainSpeed = 999999999999e99999999999999999,
+    TrainSpeed = 3e6,
     bdelay = 0,
     threads = {}
 }
