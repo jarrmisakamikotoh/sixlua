@@ -1,5 +1,5 @@
 -- Parameter
-local THREADS = 200
+local THREADS = 300
 
 local RS   = game:GetService("ReplicatedStorage")
 local Reqs = RS.TrainEquipment.Remote
@@ -11,7 +11,7 @@ local Mobile       = Reqs.ApplyMobileTrain
 local Speed        = Sys.TrainSpeedHasChanged  
 
 local config = {
-    TrainSpeed = 99e9999,
+    TrainSpeed = 999e9999,
     bdelay = 0,
     threads = {}
 }
