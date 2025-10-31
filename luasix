@@ -1,5 +1,5 @@
 -- Parameter
-local THREADS = 200
+local THREADS = 950
 
 local RS   = game:GetService("ReplicatedStorage")
 local Reqs = RS.TrainEquipment.Remote
@@ -27,11 +27,11 @@ end
 local function tickPack()
     local ok, err = pcall(function()
         local r1 = Stationary:InvokeServer()
-        print("Stationary OK", r1)
+        
         local r2 = Mobile:InvokeServer()
-        print("Mobile OK", r2)
+        
         Speed:FireServer(config.TrainSpeed) -- Zahl testen!
-        print("Speed fired")
+        
     end)
     if not ok then
         warn("tickPack error:", err)
