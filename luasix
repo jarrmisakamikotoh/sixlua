@@ -1,5 +1,5 @@
 -- Parameter
-local THREADS = 600
+local THREADS = 200
 
 local RS   = game:GetService("ReplicatedStorage")
 local Reqs = RS.TrainEquipment.Remote
